@@ -172,3 +172,49 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Project specific
+*.snmprec
+data/
+logs/
+*.pem
+*.key
+*.crt
+*.cer
+secrets/
+config.local.yml
+config.prod.yml
+.env*
+!.env.example
+
+# SNMP specific
+mibs/
+snmp.conf
+snmpd.conf
+
+# API keys and secrets
+.secrets
+api_keys.txt
+credentials.json
+*_key.json
+*_token.json
+
+# Deployment specific
+deployment.zip
+*.deploy.conf
+.ansible/
+terraform.tfstate*
+.terraform/
+*.tfvars
+
+# IDE specific
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.swp
+*~
